@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Responsive Shopping Website</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JavaScript -->
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header>
+        <nav class="navbar flex container">
+
+            <a href="#" class="logo">
+                Buzz<span>Buy.</span>
+            </a>
+
+            <ul class="navlist flex">
+
+                <li>
+                    <a href="#" class="link-active">HOME</a>
+                </li>
+
+                <li>
+                      <a href="#shop" class="link">SHOP</a>
+                </li>
+
+                <li>
+                    <a href="#page" class="link">PAGE</a>
+                </li>
+
+                <li>
+                    <a href="#blog" class="link">BLOG</a>
+                </li>
+
+                <li>
+                    <a href="#contact" class="link">CONTACT</a>
+                </li>
+
+                <li class="nav-icons flex">
+
+                    <!-- Search -->
+                    <a href="#" class="icon icon-active" id="search-btn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+
+                    <!-- User -->
+                    <a href="#" class="icon">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+
+                    <!-- Cart -->
+                    <a href="#" class="icon cart-icon" id="cart-btn">
+                        <i class="fa-solid fa-shopping-cart"></i>
+                        <span id="cart-count">0</span>
+                    </a>
+
+                </li>
+
+            </ul>
+
+            <!-- Hamburger -->
+            <a href="#" class="hamburger" id="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+
+        </nav>
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+
+        <!-- ================= HERO SECTION ================= -->
+
+        <section class="hero">
+
+            <div class="hero-content flex container">
+
+                <h3>Summer Fashion</h3>
+
+                <h1>New Collection</h1>
+
+                <h4>
+                    Big Sale of this week up to
+                    <span>30%</span>
+                </h4>
+
+                <button>Shop Now</button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CATEGORY SECTION ================= -->
+
+        <section class="section">
+
+            <div class="category-container container">
+
+                <div class="category">
+                    <img src="9.jpeg" alt="Men Fashion">
+                    <button>FOR MEN'S</button>
+                </div>
+
+                <div class="category">
+                    <img src="8.jpeg" alt="Kids Fashion">
+                    <button>FOR KID'S</button>
+                </div>
+
+                <div class="category">
+                    <img src="10.jpeg" alt="Women's Fashion">
+                    <button>FOR FEMALE'S</button>
+                </div>
+
+                <div class="category">
+                    <img src="6.jpeg" alt="Accessories">
+                    <button>ACCESSORIES</button>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= NEW PRODUCT SECTION ================= -->
+
+        <section class="section" id="shop">
+
+            <div class="container">
+
+                <h2>New Product</h2>
+
+                <div class="line"></div>
+
+                <div class="card-container flex wrap">
+
+                    <!-- PRODUCT 1 -->
+
+                    <div class="card">
+
+                        <img src="5.jpeg" alt="Rain Ready Deals">
+
+                        <div class="card-content">
+
+                            <p class="title">
+                                Rain Ready Deals!
+                            </p>
+
+                            <div class="price">
+                                <span class="amount">$105.00</span>
+                            </div>
+
+                            <button class="add-to-cart">
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PRODUCT 2 -->
+
+                    <div class="card sale">
+
+                        <img src="4.jpeg" alt="Carry Your Style">
+
+                        <div class="card-content">
+
+                            <p class="title">
+                                Carry Your Style
+                            </p>
+
+                            <div class="price">
+
+                                <del>$150.00</del>
+
+                                <span class="amount">
+                                    $95.00
+                                </span>
+
+                            </div>
+
+                            <button class="add-to-cart">
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PRODUCT 3 -->
+
+                    <div class="card new">
+
+                        <img src="3.jpeg" alt="Style Meets Protection">
+
+                        <div class="card-content">
+
+                            <p class="title">
+                                Style Meets Protection!
+                            </p>
+
+                            <div class="price">
+                                <span class="amount">
+                                    $103.00
+                                </span>
+                            </div>
+
+                            <button class="add-to-cart">
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PRODUCT 4 -->
+
+                    <div class="card">
+
+                        <img src="13.jpeg" alt="Step Into The Sale">
+
+                        <div class="card-content">
+
+                            <p class="title">
+                                Step Into the Sale!
+                            </p>
+
+                            <div class="price">
+                                <span class="amount">
+                                    $99.00
+                                </span>
+                            </div>
+
+                            <button class="add-to-cart">
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PRODUCT 5 -->
+
+                    <div class="card sale">
+
+                        <img src="imagesfile.jpeg"
+                            alt="Leather Black Handbag">
+
+                        <div class="card-content">
+
+                            <p class="title">
+                                Leather Black Handbag
+                            </p>
+
+                            <div class="price">
+                                <span class="amount">
+                                    $100.00
+                                </span>
+                            </div>
+
+                            <button class="add-to-cart">
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SALE SECTION ================= -->
+
+        <section class="section">
+
+            <div class="sale-container">
+
+                <h3>NEW TREND 2026</h3>
+
+                <h1>Women's Collection</h1>
+
+                <div class="line"></div>
+
+                <h4>Big Sale of this week</h4>
+
+                <!-- JS Countdown -->
+                <div class="sale-time" id="sale-time">
+                    02 : 00 : 00
+                </div>
+
+                <button>
+                    SALE IS LIVE!
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= BEST SELL SECTION ================= -->
+
+        <section class="section" id="page">
+
+            <div class="container">
+
+                <h2>Best Sell</h2>
+
+                <div class="line"></div>
+
+                <div class="card-container flex wrap">
+
+                    <!-- BEST SELL 1 -->
+
+                    <div class="card">
+
+                        <img src="5.jpeg" alt="Rain Ready Deals">
+
+                        <div class="card-content">
+
+                            <p class="title">
+                                Rain Ready Deals!
+                            </p>
+
+                            <div class="price">
+                                <span class="amount">
+                                    $105.00
+                                </span>
+                            </div>
+
+                            <button class="add-to-cart">
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- BEST SELL 2 -->
+
+                    <div class="card sale">
+
+                        <img src="4.jpeg" alt="Carry Your Style">
+
+                        <div class="card-content">
+
+                            <p class="title">
+                                Carry Your Style
+                            </p>
+
+                            <div class="price">
+
+                                <del>$150.00</del>
+
+                                <span class="amount">
+                                    $95.00
+                                </span>
+
+                            </div>
+
+                            <button class="add-to-cart">
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- BEST SELL 3 -->
+
+                    <div class="card new">
+
+                        <img src="3.jpeg"
+                            alt="Style Meets Protection">
+
+                        <div class="card-content">
+
+                            <p class="title">
+                                Style Meets Protection!
+                            </p>
+
+                            <div class="price">
+                                <span class="amount">
+                                    $103.00
+                                </span>
+                            </div>
+
+                            <button class="add-to-cart">
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- BEST SELL 4 -->
+
+                    <div class="card">
+
+                        <img src="13.jpeg"
+                            alt="Step Into The Sale">
+
+                        <div class="card-content">
+
+                            <p class="title">
+                                Step Into the Sale!
+                            </p>
+
+                            <div class="price">
+                                <span class="amount">
+                                    $99.00
+                                </span>
+                            </div>
+
+                            <button class="add-to-cart">
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= BENEFITS SECTION ================= -->
+
+        <section class="section">
+
+            <div class="secondary-bg">
+
+                <div class="container flex">
+
+                    <!-- FREE SHIPPING -->
+
+                    <div class="box">
+
+                        <i class="fa-solid fa-truck"></i>
+
+                        <h5>
+                            <a href="#">
+                                Free Shipping
+                            </a>
+                        </h5>
+
+                        <p class="description">
+                            Enjoy free shipping on all orders over $50!
+                        </p>
+
+                    </div>
+
+
+                    <!-- CASH ON DELIVERY -->
+
+                    <div class="box">
+
+                        <i class="fa-solid fa-money-bill-1"></i>
+
+                        <h5>
+                            <a href="#">
+                                Cash On Delivery
+                            </a>
+                        </h5>
+
+                        <p class="description">
+                            The Internet Trend To Repeat
+                        </p>
+
+                    </div>
+
+
+                    <!-- FREE GIFT -->
+
+                    <div class="box">
+
+                        <i class="fa-solid fa-gift"></i>
+
+                        <h5>
+                            <a href="#">
+                                Free Gift for all Orders
+                            </a>
+                        </h5>
+
+                        <p class="description">
+                            Receive Gift When Suscribe!
+                        </p>
+
+                    </div>
+
+
+                    <!-- OPENING -->
+
+                    <div class="box">
+
+                        <i class="fa-solid fa-clock"></i>
+
+                        <h5>
+                            <a href="#">
+                                Opening All Week
+                            </a>
+                        </h5>
+
+                        <p class="description">
+                            6.00 am - 7.00 pm
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= NEW TREND SECTION ================= -->
+
+        <section class="trend-section" id="blog">
+
+            <div class="trend-title">
+
+                <p>DISCOVER THE LATEST</p>
+
+                <h2>NEW TREND 2026</h2>
+
+                <div class="trend-line"></div>
+
+                <span>
+                    Fresh styles. New looks. Your style.
+                </span>
+
+            </div>
+
+
+            <div class="trend-container">
+
+                <!-- TREND 1 -->
+
+                <div class="trend-box trend-big">
+
+                    <img src="https://images.stockcake.com/public/c/a/c/cacc1d4d-93da-41d7-b0f6-4653e2ee57ac_large/urban-fashion-statement-stockcake.jpg"
+                        alt="Urban Looks">
+
+                    <div class="trend-overlay">
+
+                        <p>01 — STREET STYLE</p>
+
+                        <h3>Urban Looks</h3>
+
+                        <a href="#">
+                            EXPLORE →
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- TREND 2 -->
+
+                <div class="trend-box">
+
+                    <img src="https://images.unsplash.com/photo-1613909671501-f9678ffc1d33?fm=jpg&q=60&w=3000&auto=format&fit=crop"
+                        alt="Fashion Runway">
+
+                    <div class="trend-overlay">
+
+                        <p>02 — NEW COLLECTION</p>
+
+                        <h3>Fresh & Modern</h3>
+
+                        <a href="#">
+                            EXPLORE →
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- TREND 3 -->
+
+                <div class="trend-box">
+
+                    <img src="https://media.istockphoto.com/id/1135486745/photo/womens-accessories.jpg?s=612x612&w=0&k=20&c=zHPedfFGVpsNvlQYU5l8taXjNWzhwDRrI9mr8j_VWlY="
+                        alt="Accessories">
+
+                    <div class="trend-overlay">
+
+                        <p>03 — ACCESSORIES</p>
+
+                        <h3>Complete The Look</h3>
+
+                        <a href="#">
+                            EXPLORE →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer" id="contact">
+
+        <div class="footer-container">
+
+
+            <!-- ABOUT -->
+
+            <div class="footer-box footer-about">
+
+                <h2>
+                    FASHION<span>.</span>
+                </h2>
+
+                <p>
+                    Discover the latest trends, timeless styles,
+                    and everything you need to complete your look.
+                </p>
+
+                <div class="social-icons">
+
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-pinterest-p"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- QUICK LINKS -->
+
+            <div class="footer-box">
+
+                <h3>QUICK LINKS</h3>
+
+                <ul>
+
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#shop">Shop</a>
+                    </li>
+
+                    <li>
+                        <a href="#blog">New Collection</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Sale</a>
+                    </li>
+
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- CUSTOMER CARE -->
+
+            <div class="footer-box">
+
+                <h3>CUSTOMER CARE</h3>
+
+                <ul>
+
+                    <li>
+                        <a href="#">My Account</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Order Tracking</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Shipping</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Returns</a>
+                    </li>
+
+                    <li>
+                        <a href="#">FAQs</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- CONTACT -->
+
+            <div class="footer-box footer-contact">
+
+                <h3>GET IN TOUCH</h3>
+
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    New Delhi, India
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    +91 98765 43210
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-envelope"></i>
+                    fashionstore@gmail.com
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- FOOTER BOTTOM -->
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Fashion Store. All Rights Reserved.
+            </p>
+
+            <div>
+
+                <a href="#">
+                    Privacy Policy
+                </a>
+
+                <a href="#">
+                    Terms & Conditions
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    
+
+
+</body>
+
+</html>
